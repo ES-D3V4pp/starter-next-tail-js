@@ -1,0 +1,100 @@
+.nav {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  z-index: 20;
+}
+
+.nav-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  position: relative;
+  padding: 0.5rem 0;
+  line-height: 1.5;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Lien du dropdown (non cliquable mais aligné) */
+.dropdown-toggle {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  position: relative;
+  padding: 0.5rem 0;
+  line-height: 1.5;
+  vertical-align: middle;
+  cursor: default;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  z-index: 10;
+  border: 1px solid #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu .nav-link {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu .nav-link:hover {
+  background: #222;
+}
+
+.dropdown-menu .nav-link.active {
+  font-weight: bold;
+  position: relative;
+}
+
+.dropdown-menu .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: white;
+}
