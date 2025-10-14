@@ -1,6 +1,5 @@
 'use client';
 import "./globals.css";
-import './typo.css';
 import { useSectionNavigation } from './hooks/useSectionNavigation';
 import Nav from "./blocks/Nav";
 

@@ -1,65 +1,6 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  
-  /* gaps */
-  --g1: 4px;
-  --g2: 8px;
-  --g3: 12px;
-  --g4: 16px;
-  --g5: 20px;
-  --g6: 24px;
-  --g7: 28px;
-  --g8: 32px;
-  --g9: 36px;
-  --g10: 40px;
-  --g11: 44px;
-  --g12: 48px;
-  --g13: 52px;
-  --g14: 56px;
-  --g15: 60px;
-  --g16: 64px;
-  --g17: 68px;
-  --g18: 72px;
-  --g19: 76px;
-  --g20: 80px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-/* Typography (injectées via next/font) */
-  /* --body-font: Inter (400, 700) */
-  /* --title-font: Poppins (400, 600) */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--body-font);
-}
-
-h1, h2, h3 {
-  font-family: var(--title-font);
-  font-weight: 600;
-}
-section{
-  height:100vh;
-  width:100%;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import "./styles/theme.css";
+@import "./styles/layout.css";
+@import "./styles/typo.css";
 
 
