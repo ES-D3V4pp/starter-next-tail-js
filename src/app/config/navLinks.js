@@ -1,17 +1,17 @@
 export const navLinks = [
   {
-    label: 'Bienvenue',
+    label: 'Section hero',
     id: 'hero',
   },
   {
-    label: 'Présentation',
-    id: 'presentation',
+    label: 'Section 2',
+    id: 's2',
   },
   {
-    label: 'Formations',
+    label: 'Groupe',
     sub: [
-      { label: 'TPE', id: 'tpe' },
-      { label: 'PME', id: 'pme' },
+      { label: 'Section 3', id: 's3' },
+      { label: 'Section 4', id: 's4' },
     ],
   },
   {
