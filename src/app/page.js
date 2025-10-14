@@ -5,15 +5,15 @@ import S4 from "./sections/s4";
 import Contact from "./sections/contact";
 
 export const metadata = {
-  title: 'Mon Site Vitrine',
-  description: 'Développeur freelance, portfolio, services et contact.',
+  title: 'Mon site vitrine',
+  description: 'Coaching en entreprise via des formations team',
 };
 
 export default function SpaContent() {
   // pour une simple fonction, même non hook, il faut passer le composant en client
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div>
+      <main>
         <Hero/>
         <S2/>
         <S3/>

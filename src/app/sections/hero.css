@@ -1,0 +1,13 @@
+/* Hero.module.css */
+#hero {
+  background-image: url('/hero.jpg'); /* ou .jpg */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
