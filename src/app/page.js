@@ -38,9 +38,6 @@ export default function SpaContent() {
         <S4/>
         <Contact/>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        Template Next, tailwind js for spa
-      </footer>
     </div>
   );
 }

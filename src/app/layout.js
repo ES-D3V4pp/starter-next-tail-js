@@ -2,6 +2,7 @@
 import "./globals.css";
 import { useSectionNavigation } from './hooks/useSectionNavigation';
 import Nav from "./blocks/Nav";
+import Footer from './sections/footer';
 
 import { Montserrat, Poppins } from 'next/font/google'
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <Nav/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
