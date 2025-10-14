@@ -1,26 +1,31 @@
 'use client';
-import { useSectionNavigation } from './hooks/useSectionNavigation';
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import './typo.css';
+import { useSectionNavigation } from './hooks/useSectionNavigation';
 import Nav from "./blocks/Nav";
-import { navLinks } from './config/navLinks';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { Montserrat, Poppins } from 'next/font/google'
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--title-font',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  display: 'swap',
+  variable: '--body-font',
+})
 
 export default function RootLayout({ children }) {
   useSectionNavigation();
   return (
     <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${poppins.variable} antialiased`}
       >
         <Nav/>
         {children}

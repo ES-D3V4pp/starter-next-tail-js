@@ -1,0 +1,19 @@
+/* Typographie globale */
+body {
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Titres par défaut avec la font des titres */
+h1, h2, h3 {
+  font-family: var(--title-font);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Paragraphe spécifique avec Inter en gras */
+p.intro {
+  font-family: var(--body-font);
+  font-weight: 700;
+}
