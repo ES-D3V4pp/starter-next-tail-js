@@ -1,10 +1,20 @@
+header #menu{
+  position: fixed;
+  z-index: 20;
+  background-color: darkblue;
+}
+
+#menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .nav {
   display: flex;
   gap: 2rem;
-  position: fixed;
-  z-index: 20;
-  background-color: black;
-  width: 100%;
+  position: relative;
+  top: 16px;
 }
 
 .nav-link {

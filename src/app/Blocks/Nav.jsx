@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { navLinks } from '../config/navLinks';
 import './nav.css';
+import Logo from '../components/Logo';
 
 export default function Nav() {
   const router = useRouter();
@@ -12,6 +13,9 @@ export default function Nav() {
   };
 
   return (
+    <header id="menu">
+    <div className='container'>
+    <Logo color={"#ffffff"} height='20px'/>
     <nav className="nav">
       {navLinks.map((link) => {
         if (link.sub) {
@@ -44,5 +48,7 @@ export default function Nav() {
         );
       })}
     </nav>
+    </div>
+    </header>
   );
 }

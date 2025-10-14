@@ -3,6 +3,29 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --min-gap: 4;
+
+  /* gaps */
+  --g1: 4px;
+  --g2: 8px;
+  --g3: 12px;
+  --g4: 16px;
+  --g5: 20px;
+  --g6: 24px;
+  --g7: 28px;
+  --g8: 32px;
+  --g9: 36px;
+  --g10: 40px;
+  --g11: 44px;
+  --g12: 48px;
+  --g13: 52px;
+  --g14: 56px;
+  --g15: 60px;
+  --g16: 64px;
+  --g17: 68px;
+  --g18: 72px;
+  --g19: 76px;
+  --g20: 80px;
 }
 
 html {

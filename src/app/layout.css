@@ -1,0 +1,21 @@
+.container{
+  max-width: 100%;
+  padding: 0 var(--g4);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Breakpoint tablette (ex: ≥ 768px) */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--g6);
+  }
+}
+
+/* Breakpoint desktop (ex: ≥ 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+    padding: var(--g20);
+  }
+}
