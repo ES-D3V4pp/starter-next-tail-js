@@ -1,5 +1,6 @@
-// app/[section]/page.jsx
-import SpaContent from '../page';
+export const dynamic = 'force-static';
+
+import SpaContent from '../blocks/SpaContent';
 
 export default function SectionPage() {
   return <SpaContent />;

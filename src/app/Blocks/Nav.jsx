@@ -1,54 +1,38 @@
 'use client';
-import { useRouter } from 'next/navigation';
 import { navLinks } from '../config/navLinks';
-import './nav.css';
 import Logo from '../components/Logo';
+import Alink from '../components/Alink';
 
 export default function Nav() {
-  const router = useRouter();
-  const activeSection = 'hero'; // temporaire, à remplacer par un vrai système plus tard
-
-  const handleNav = (id) => {
-    router.push(`/${id}`);
-  };
-
   return (
     <header id="menu">
-    <div className='container'>
-    <Logo color={"#ffffff"} height='20px'/>
-    <nav className="nav">
-      {navLinks.map((link) => {
-        if (link.sub) {
-          return (
-            <div key={link.label} className="dropdown">
-              <a className="nav-link dropdown-toggle">{link.label}</a>
-              <div className="dropdown-menu">
-                {link.sub.map((sublink) => (
-                  <a
-                    key={sublink.id}
-                    onClick={() => handleNav(sublink.id)}
-                    className={`nav-link ${activeSection === sublink.id ? 'active' : ''}`}
-                  >
-                    {sublink.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          );
-        }
-
-        return (
-          <a
-            key={link.id}
-            onClick={() => handleNav(link.id)}
-            className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
-          >
-            {link.label}
-          </a>
-        );
-      })}
-    </nav>
-    </div>
+      <nav className="container">
+        <Logo color="white" height="24px" />
+        <ul>
+          {navLinks.map((link, index) => (
+            link.sub ? (
+              <li key={`group-${index}`}>
+                <span className="dropdown-label">{link.label}</span>
+                <ul className="sub-menu">
+                  {link.sub.map((sublink) => (
+                    <li key={sublink.id}>
+                      <Alink id={sublink.id} className="nav-link">
+                        {sublink.label}
+                      </Alink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li key={link.id}>
+                <Alink id={link.id} className="nav-link">
+                  {link.label}
+                </Alink>
+              </li>
+            )
+          ))}
+        </ul>
+      </nav>
     </header>
   );
 }

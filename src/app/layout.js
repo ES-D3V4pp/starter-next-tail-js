@@ -23,7 +23,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   useSectionNavigation();
   return (
-    <html lang="fr">
+    <html lang="fr" data-scroll-behavior="smooth">
       <body
         className={`${montserrat.variable} ${poppins.variable} antialiased`}
       >

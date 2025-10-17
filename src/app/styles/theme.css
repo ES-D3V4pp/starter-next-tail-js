@@ -27,9 +27,6 @@
   --g20: 80px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 /* Typography (injectées via next/font) */
   /* --body-font: Inter (400, 700) */
   /* --title-font: Poppins (400, 600) */
@@ -39,9 +36,10 @@ body {
   font-family: var(--body-font);
 }
 
-h1, h2, h3 {
+h1, h2, h3, nav a {
   font-family: var(--title-font);
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 @theme inline {

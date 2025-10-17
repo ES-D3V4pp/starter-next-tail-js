@@ -1,5 +1,50 @@
 /* mobile */
-button{
+header{
+  position: fixed;
+  background-color: var(--background);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: var(--foreground);
+  height: var(--g14);
+}
+
+nav ul {
+  display: flex;
+  width: fit-content;
+}
+nav a {
+  margin-left: var(--g4);
+}
+
+#logo{
+  margin-bottom: var(--g4);
+}
+button {
   padding: var(--g2) var(--g4);
   font-size: var(--g3);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  nav a {
+    margin-left: var(--g6);
+  }
+  button {
+    padding: var(--g3) var(--g6);
+    font-size: var(--g4);
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  nav a {
+    margin-left: var(--g8);
+    font-size: 14px;
+  }
+  button {
+    padding: var(--g4) var(--g8);
+    font-size: var(--g6);
+  }
 }

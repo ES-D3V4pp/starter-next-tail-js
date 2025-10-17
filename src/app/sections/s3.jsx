@@ -3,7 +3,7 @@ import React from "react";
 export default function S3() {
   return (
     <section id="s3">
-      <div className="container">
+      <div className="content">
       <h2>Section 3</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus

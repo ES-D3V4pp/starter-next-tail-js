@@ -3,7 +3,7 @@ import React from "react";
 export default function S4() {
   return (
     <section id="s4">
-      <div className="container">
+      <div className="content">
       <h2>Section 4</h2>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
