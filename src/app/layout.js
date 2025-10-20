@@ -1,6 +1,5 @@
 'use client';
 import "./globals.css";
-import { useSectionNavigation } from './hooks/useSectionNavigation';
 import Nav from "./blocks/Nav";
 import Footer from './sections/footer';
 
@@ -21,7 +20,6 @@ const poppins = Poppins({
 })
 
 export default function RootLayout({ children }) {
-  useSectionNavigation();
   return (
     <html lang="fr" data-scroll-behavior="smooth">
       <body
