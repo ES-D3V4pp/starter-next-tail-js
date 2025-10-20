@@ -1,8 +1,6 @@
-// hooks/useHistory.js
 export function useHistory() {
-  const updateUrl = (id) => {
-    const path = id === 'hero' ? '/' : `/${id}`;
-    window.history.pushState({}, '', path);
+  const updateUrl = (pathname) => {
+    window.history.pushState({}, '', pathname);
   };
 
   return { updateUrl };
