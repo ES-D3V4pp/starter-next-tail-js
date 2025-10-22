@@ -1,5 +1,6 @@
 import { useSpaNavScroll } from '../hooks/useSpaNavScroll';
 import { routes } from '../config/routes';
+import Logo from '../components/Logo';
 
 export default function Nav() {
   const { activePath, scrollTo } = useSpaNavScroll(routes);
@@ -13,6 +14,11 @@ export default function Nav() {
   return (
     <header>
       <nav>
+        <a
+          href="/"
+          onClick={goTo('hero', '/')}>
+            <Logo color="white" height="20px"/>
+        </a>
         <ul>
         {routes.map((link) => (
           <li key={link.pathname}>
