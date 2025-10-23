@@ -23,6 +23,7 @@ nav li{
 }
 nav a {
   margin: 0;
+  vertical-align: middle;
 }
 
 #logo{

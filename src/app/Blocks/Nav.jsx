@@ -1,6 +1,7 @@
 import { useSpaNavScroll } from '../hooks/useSpaNavScroll';
 import { routes } from '../config/routes';
 import Logo from '../components/Logo';
+import { Menu } from 'lucide-react';
 
 export default function Nav() {
   const { activePath, scrollTo } = useSpaNavScroll(routes);
@@ -31,8 +32,8 @@ export default function Nav() {
           </a>
           </li>
         ))}
-        
         </ul>
+         <Menu className='w-6 h-6 text-white'/>
       </nav>
     </header>
   );
