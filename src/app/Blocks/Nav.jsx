@@ -13,7 +13,7 @@ export default function Nav() {
 
   return (
     <header>
-      <nav>
+      <nav className='container'>
         <a
           href="/"
           onClick={goTo('hero', '/')}>

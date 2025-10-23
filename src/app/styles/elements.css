@@ -2,11 +2,11 @@
 header{
   position: fixed;
   background-color: var(--background);
+  align-items: end;
 }
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: end;
   color: var(--foreground);
   padding: 0;
   margin: 0;
@@ -26,7 +26,7 @@ nav a {
 }
 
 #logo{
-  margin-bottom: var(--g4);
+  margin-left: auto;
 }
 button {
   padding: var(--g2) var(--g4);
@@ -46,9 +46,12 @@ button {
 }
 /* Desktop */
 @media (min-width: 1024px) {
-
+  nav{
+    margin: var(--g2) var(--g8) !important;
+  }
   nav ul{
   gap: var(--g8);
+  position: relative;
   }
   nav a {
     font-size: 14px;

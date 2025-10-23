@@ -28,9 +28,10 @@ section, header, footer{
 @media (min-width: 1024px) {
   .container {
     max-width: 1280px;
-    padding: 0 var(--8);
+    width: 100%;
+    padding: 0 var(--g8);
   }
   .content{
-  padding: 400px var(--g8);
+  padding: var(--g16) var(--g8);
 }
 }
