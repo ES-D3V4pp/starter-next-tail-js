@@ -14,6 +14,7 @@ export default function Hero() {
         aspernatur consectetur dignissimos repudiandae.
       </p>
       <Button
+        aspect="secondary"
         action={() => {
           alert("test !");
         }}

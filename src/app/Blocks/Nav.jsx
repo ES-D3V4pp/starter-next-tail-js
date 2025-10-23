@@ -18,7 +18,7 @@ export default function Nav() {
         <a
           href="/"
           onClick={goTo('hero', '/')}>
-            <Logo color="white" height="20px"/>
+            <Logo style={{ color: 'var(--primary)'}} height="20px"/>
         </a>
         <ul>
         {routes.map((link) => (
@@ -33,7 +33,7 @@ export default function Nav() {
           </li>
         ))}
         </ul>
-         <Menu className='w-6 h-6 text-white'/>
+         <Menu style={{ color: 'var(--secondary)' }} className='w-6 h-6'/>
       </nav>
     </header>
   );
