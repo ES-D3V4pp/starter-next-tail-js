@@ -1,10 +1,5 @@
 export const routes = [
   {
-    label: 'Accueil',
-    target: 'hero',
-    pathname: '/'
-  },
-  {
     label: 'Présentation',
     target: 's2',
     pathname: '/intro'
