@@ -1,16 +1,16 @@
 export const routes = [
   {
-    label: 'Présentation',
+    label: 'Section 1',
     target: 's2',
     pathname: '/intro'
   },
   {
-    label: 'À propos',
+    label: 'Section 2',
     target: 's3',
     pathname: '/about'
   },
   {
-    label: 'Contact',
+    label: 'Section 3',
     target: 'contact',
     pathname: '/contact'
   }
