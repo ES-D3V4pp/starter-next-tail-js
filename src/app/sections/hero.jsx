@@ -6,12 +6,10 @@ export default function Hero() {
   return (
     <section id="hero">
       <div className="container">
-      <h2>Section Hero</h2>
-      <p>
+      <h1>Section Hero Title is here !</h1>
+      <p className="intro">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-        provident aliquam repellendus totam, nesciunt facilis numquam magnam
-        iusto, officia odio laudantium tempora iste ipsa neque doloremque,
-        aspernatur consectetur dignissimos repudiandae.
+        provident aliquam repellendus totam.
       </p>
       <Button
         aspect="secondary"

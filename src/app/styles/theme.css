@@ -3,6 +3,7 @@
 :root {
   --primary: #09093F;
   --secondary: #E1000F;
+  --ternary: #ffffff;
   --background: #ffffff;
   --foreground: var(--primary);
   
