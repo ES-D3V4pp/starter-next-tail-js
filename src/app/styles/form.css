@@ -1,0 +1,36 @@
+label {
+  font-size: 0.8rem;
+  margin-bottom: var(--g2);
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: var(--g8);
+  line-height: var(--g8);
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  padding: 0 var(--g4);
+}
+
+@media (min-width: 768px) {
+  label {
+    margin-bottom: var(--g3);
+  }
+
+  input {
+    height: var(--g8);
+    line-height: var(--g8);
+  }
+}
+
+@media (min-width: 1024px) {
+  label {
+    margin-bottom: var(--g4);
+  }
+
+  input {
+    height: var(--g10);
+    line-height: var(--g10);
+  }
+}

@@ -2,8 +2,13 @@
 
 :root {
   --primary: #09093F;
+  --primary-light:#6F6F9E;
+  --primary-lighter: #CDCDE5;
+
   --secondary: #E1000F;
-  --ternary: #ffffff;
+  --secondary-light: #C6696F;
+  --secondary-lighter: #F9CCCF;
+
   --background: #ffffff;
   --foreground: var(--primary);
   
