@@ -12,7 +12,7 @@ export default function Hero() {
         provident aliquam repellendus totam.
       </p>
       <Button
-        aspect="secondary"
+        className="bg-secondary"
         action={() => {
           alert("test !");
         }}
